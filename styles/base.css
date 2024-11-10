@@ -1,0 +1,225 @@
+/* base.css */
+
+:root {
+    --primary-color: #2c3e50;
+    /* Header and Footer Background */
+    --secondary-color: #3498db;
+    /* Card Title Background */
+    --text-color: #333333;
+    /* Main Text Color */
+    --header-text-color: #f4d03f;
+    /* Header Text Color */
+    --footer-text-color: #f4d03f;
+    /* Footer Text Color */
+    --link-color: #8e44ad;
+    /* Links Color */
+    --body-font: 'Arial', sans-serif;
+    /* Body Font */
+    --title-font: 'Georgia', serif;
+    /* Title Font */
+    --background-color: #ecf0f1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--header-text-color);
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr, 1fr;
+}
+
+header h1 {
+    font-family: var(--title-font);
+    grid-row: 1/2;
+    height: 75px;
+    font-size: 2rem;
+    background-color: #3498db;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    grid-row: 2/3;
+    height: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    gap: 1.5rem;
+}
+
+header nav ul li a {
+
+    color: var(--header-text-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: var(--link-color);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    gap: 1.5rem;
+    padding: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    height: 550px;
+}
+
+.card-title {
+    font-family: var(--title-font);
+    height: 50px;
+    font-size: 1.2rem;
+    color: #ffffff;
+    background-color: var(--secondary-color);
+    text-align: center;
+    /* justify-content: center; */
+    border-radius: 8px 8px 0 0;
+}
+
+#about {
+    grid-column: 1/3;
+    gap: 2rem;
+}
+
+#about-card {
+    height: auto;
+    grid-template-rows: 1fr 1fr;
+}
+
+#profile {
+    grid-row: 1/2;
+    align-items: center;
+    padding: 15px;
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#profile-text {
+    grid-column: 1/4;
+}
+
+#profile-img {
+    width: 100px;
+    height: auto;
+    grid-column: 4/5;
+    padding: 0;
+}
+
+#location {
+    margin-top: 1rem;
+}
+
+#location-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#location img {
+    width: 200px;
+    grid-column: 1/2;
+    height: auto;
+}
+
+#location-text {
+    grid-column: 2/4;
+}
+
+#profile-text,
+#location-text {
+    font-family: var(--body-font);
+    line-height: 1.5;
+}
+
+#resources {
+    grid-column: 3/4;
+}
+
+#resource-list {
+    padding: 10px;
+    height: 100%;
+    display: flex;
+    align-items: left;
+}
+
+#resource-list ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-position: inside;
+    padding: 0;
+    margin: 0;
+}
+
+#resources a {
+    text-align: center;
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+#resources a:hover {
+    text-decoration: underline;
+}
+
+
+#location-title {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.card img {
+    margin: 0 auto;
+    display: block;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--footer-text-color);
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    height: 90px;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+footer p span {
+    font-weight: bold;
+}
+
+#lastModified {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    color: var(--footer-text-color);
+}
