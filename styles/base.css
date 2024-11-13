@@ -2,21 +2,23 @@
 
 :root {
     --primary-color: #2c3e50;
-    /* Header and Footer Background */
+
     --secondary-color: #3498db;
-    /* Card Title Background */
+
     --text-color: #333333;
-    /* Main Text Color */
+
     --header-text-color: #f4d03f;
-    /* Header Text Color */
-    --footer-text-color: #f4d03f;
-    /* Footer Text Color */
-    --link-color: #8e44ad;
-    /* Links Color */
+
+    --footer-text-color: #baa658;
+
+    --link-color: #4944ad;
+
+    --link-hover-color: #8e44ad;
+
     --body-font: 'Arial', sans-serif;
-    /* Body Font */
-    --title-font: 'Georgia', serif;
-    /* Title Font */
+
+    --title-font: 'Futura', sans-serif;
+
     --background-color: #ecf0f1;
 }
 
@@ -52,8 +54,10 @@ header h1 {
 }
 
 nav {
+    font-family: var(--title-font);
     grid-row: 2/3;
     height: 50px;
+
 }
 
 header nav ul {
@@ -61,7 +65,7 @@ header nav ul {
     display: flex;
     justify-content: center;
     padding: 15px;
-    gap: 1.5rem;
+    gap: 9rem;
 }
 
 header nav ul li a {
@@ -72,13 +76,12 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: var(--link-color);
+    color: var(--footer-text-color);
 }
 
 main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    /* grid-template-rows: 1fr 1fr 1fr; */
     gap: 1.5rem;
     padding: 1.5rem;
     max-width: 1200px;
@@ -93,12 +96,12 @@ main {
 
 .card-title {
     font-family: var(--title-font);
+    padding-top: 10px;
     height: 50px;
     font-size: 1.2rem;
     color: #ffffff;
     background-color: var(--secondary-color);
     text-align: center;
-    /* justify-content: center; */
     border-radius: 8px 8px 0 0;
 }
 
@@ -126,7 +129,7 @@ main {
 }
 
 #profile-img {
-    width: 100px;
+    width: 165px;
     height: auto;
     grid-column: 4/5;
     padding: 0;
@@ -139,6 +142,7 @@ main {
 #location-content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
 }
 
 #location img {
@@ -155,6 +159,7 @@ main {
 #location-text {
     font-family: var(--body-font);
     line-height: 1.5;
+    font-size: 1.2rem;
 }
 
 #resources {
@@ -180,20 +185,29 @@ main {
 #resources a {
     text-align: center;
     color: var(--link-color);
-    text-decoration: none;
+    text-decoration: underline;
+    font-size: 1.3rem;
+    line-height: 2rem;
+
 }
 
 #resources a:hover {
-    text-decoration: underline;
+    color: var(--link-hover-color);
 }
 
 
 #location-title {
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.3rem;
     margin-bottom: 0.5rem;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     text-align: center;
+}
+
+hr {
+    margin: auto;
+    height: 1px;
+    width: 500px;
 }
 
 .card img {
@@ -202,11 +216,12 @@ main {
 }
 
 footer {
+    font-family: var(--title-font);
     background-color: var(--primary-color);
     color: var(--footer-text-color);
     text-align: center;
     padding: 1rem;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     height: 90px;
 }
 
