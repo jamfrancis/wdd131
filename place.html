@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Place - James Francis</title>
+    <meta name="author" content="James Francis" />
+    <meta name="description"
+        content="A site focused on the country of Kosovo. This information includes the area, population, capitol, and information about the weather." />
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1>
+            Kosovo
+        </h1>
+    </header>
+
+    <main>
+        <img>
+        <div class="card">
+            <h2>Data</h2>
+            <dl>
+                <dt>Area:</dt>
+                <dd>10,887 sq km</dd>
+                <dt>Population:</dt>
+                <dd>1,964,327</dd>
+                <dt>Capital:</dt>
+                <dd>Pristina</dd>
+                <dt>Languages:</dt>
+                <dd>Albanian, Serbian</dd>
+                <dt>Currency:</dt>
+                <dd>Euro (€)</dd>
+                <dt>Time Zone:</dt>
+                <dd>(UTC+1)</dd>
+                <dt>Calling Code:</dt>
+                <dd>+383</dd>
+                <dt>Internet TLD:</dt>
+                <dd>.xk</dd>
+            </dl>
+        </div>
+        <div class="card">
+            <h2>Weather</h2>
+            <img>
+            <dl>
+                <dt>Temperature:</dt>
+                <dd id="temperature"></dd>
+                <dt>Conditions:</dt>
+                <dd id="conditions"></dd>
+                <dt>Wind:</dt>
+                <dd id="wind"></dd>
+                <dt>Wind Chill:</dt>
+                <dd id="windChill"></dd>
+            </dl>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            <span id="currentyear"></span>
+            James Francis | Indiana, United States
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>

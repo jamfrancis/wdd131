@@ -21,9 +21,9 @@
 
     --text-color: #333333;
 
-    --header-text-color: tomato;
+    --header-text-color: rgb(255, 200, 191);
 
-    --footer-text-color: #baa658;
+    --footer-text-color: #ffffff;
 
     --link-color: #4944ad;
 
@@ -79,7 +79,7 @@ h1 {
 }
 
 nav {
-    background-color: tomato;
+    background-color: var(--header-text-color);
 }
 
 .navigation a.active {
