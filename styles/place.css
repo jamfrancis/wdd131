@@ -130,6 +130,15 @@ footer {
     height: 90px;
 }
 
+footer::after {
+    content: '';
+    display: block;
+    width: 80%;
+    height: 2px;
+    background-color: var(--footer-text-color);
+    margin: 20px auto 0;
+}
+
 footer p {
     margin: 0.5rem 0;
 }
