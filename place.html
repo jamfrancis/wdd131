@@ -28,41 +28,60 @@
     </header>
 
     <main>
-        <img>
-        <div class="card">
+        <picture>
+            <source srcset="images/Kosovo-Large.webp" media="(min-width: 40em)" type="image/webp"
+                alt="image of Kosovo city">
+            <source srcset="images/Kosovo-Small.webp" media="(max-width: 40em)" type="image/webp"
+                alt="image of Kosovo city">
+            <img src="images/Kosovo-Small.webp" alt="Scenic view of Kosovo">
+        </picture>
+        <div class="card" id="country-card">
             <h2>Data</h2>
-            <dl>
-                <dt>Area:</dt>
-                <dd>10,887 sq km</dd>
-                <dt>Population:</dt>
-                <dd>1,964,327</dd>
-                <dt>Capital:</dt>
-                <dd>Pristina</dd>
-                <dt>Languages:</dt>
-                <dd>Albanian, Serbian</dd>
-                <dt>Currency:</dt>
-                <dd>Euro (€)</dd>
-                <dt>Time Zone:</dt>
-                <dd>(UTC+1)</dd>
-                <dt>Calling Code:</dt>
-                <dd>+383</dd>
-                <dt>Internet TLD:</dt>
-                <dd>.xk</dd>
-            </dl>
+            <div class="units">
+                <ul>
+                    <li>Area:</li>
+                    <li>Population:</li>
+                    <li>Capital:</li>
+                    <li>Languages:</li>
+                    <li>Currency:</li>
+                    <li>Time Zone:</li>
+                    <li>Calling Code:</li>
+                    <li>Internet TLD:</li>
+                </ul>
+            </div>
+            <div class="measurements">
+                <ul>
+                    <li>10,887 sq km</li>
+                    <li>1,964,327</li>
+                    <li>Pristina</li>
+                    <li>Albanian, Serbian</li>
+                    <li>Euro (€)</li>
+                    <li>(UTC+1)</li>
+                    <li>+383</li>
+                    <li>.xk</li>
+                </ul>
+            </div>
         </div>
-        <div class="card">
+        </div>
+        <div class="card" id="weather-card">
             <h2>Weather</h2>
-            <img>
-            <dl>
-                <dt>Temperature:</dt>
-                <dd id="temperature"></dd>
-                <dt>Conditions:</dt>
-                <dd id="conditions"></dd>
-                <dt>Wind:</dt>
-                <dd id="wind"></dd>
-                <dt>Wind Chill:</dt>
-                <dd id="windChill"></dd>
-            </dl>
+            <img id="weather-img" src="images/partly-cloudy.svg" alt="partly cloudy sun">
+            <div class="units">
+                <ul>
+                    <li>Temperature:</li>
+                    <li>Conditions:</li>
+                    <li>Wind:</li>
+                    <li>Wind Chill:</li>
+                </ul>
+            </div>
+            <div class="measurements">
+                <ul>
+                    <li id="temperature"></li>
+                    <li id="conditions"></li>
+                    <li id="wind"></li>
+                    <li id="windChill"></li>
+                </ul>
+            </div>
         </div>
     </main>
 

@@ -1,0 +1,145 @@
+.noto-sans- {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.figtree- {
+    font-family: "Figtree", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --primary-color: #2c3e50;
+
+    --secondary-color: #3498db;
+
+    --text-color: #333333;
+
+    --header-text-color: rgb(255, 200, 191);
+
+    --footer-text-color: #ffffff;
+
+    --link-color: #4944ad;
+
+    --link-hover-color: #8e44ad;
+
+    --body-font: 'Figtree', sans-serif;
+
+    --title-font: 'Noto Sans', sans-serif;
+
+    --background-color: #ecf0f1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+/* Header */
+header {
+    height: 100px;
+    background-color: red;
+    width: 100vw;
+}
+
+h1 {
+    line-height: 100px;
+    text-align: center;
+    font-size: 3em;
+
+}
+
+
+/* Picture */
+
+img {
+    width: 100vw;
+}
+
+/* Cards */
+
+.card {
+    margin: 20px auto;
+    padding: 15px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    width: 100vw;
+}
+
+.units,
+.measurements {
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+    margin: 0;
+    padding: 0;
+}
+
+.units ul,
+.measurements ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.units li,
+.measurements li {
+    margin-bottom: 10px;
+
+}
+
+.units {
+    text-align: right;
+    font-weight: 800;
+}
+
+.measurements {
+    text-align: left;
+    padding-left: 15px;
+}
+
+#weather-img {
+    height: 40px;
+    width: 100%;
+
+}
+
+
+/* Footer */
+footer {
+    font-family: var(--title-font);
+    background-color: var(--primary-color);
+    color: var(--footer-text-color);
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+    height: 90px;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+footer p span {
+    font-weight: bold;
+}
+
+#lastModified {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    color: var(--footer-text-color);
+}
