@@ -1,0 +1,48 @@
+@media only screen and (min-width: 40em) {
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        display: block;
+        /* change state in small view */
+        flex: 1 1 100%;
+    }
+
+    .navigation {
+        list-style: none;
+        margin-left: auto;
+        max-width: 760px;
+        height: 60px;
+    }
+
+    ul.navigation {
+        max-width: fit-content;
+        /* padding-top: 8px; */
+        margin-right: 0;
+    }
+
+    .navigation a {
+        display: block;
+
+        padding: 0.75rem;
+        text-align: left;
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+        /* font-size: clamp(1rem, 2vmin, 1.5rem); */
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #album-container {
+        /* grid-template-columns: repeat(3, 1fr); */
+        max-width: 1500px;
+    }
+}
