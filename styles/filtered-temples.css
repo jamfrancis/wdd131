@@ -97,7 +97,7 @@ navigation a:active {
 .navigation li {
     display: none;
     max-width: 100px;
-    /* padding-left: 10px; */
+    padding-top: 8px;
 }
 
 .show li {
@@ -126,13 +126,22 @@ h2 {
 }
 
 /* Image layout */
-img {
-    width: 100%;
-    min-width: 400px;
-    /* max-width: 600px; */
-    height: auto;
-    margin: .5rem;
-}
+
+.temple-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .temple-image {
+    width: 360px;
+    height: 225px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
 
 figcaption {
     text-align: center;
@@ -170,7 +179,7 @@ footer p span {
 }
 
 #lastModified {
-    font-size: 1rem;
-    margin-top: 0.5rem;
-    color: [white];
+    font-size: 0.5rem;
+    margin-top: 0.2rem;
+    color: var(--footer-text-color);
 }
