@@ -1,0 +1,90 @@
+.figtree- {
+    font-family: "Figtree", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.host-grotesk- {
+    font-family: "Host Grotesk", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --body-font: 'Figtree', sans-serif;
+
+    --title-font: 'Host Grotesk', sans-serif;
+
+    --primary-color: rgb(213 238 241);
+
+    --secondary-color: rgb(150 207 213);
+
+    --text-color: rgb(0 52 73);
+
+    --accent-color: rgb(255 238 131);
+
+    --footer-text-color: rgb(0 52 73);
+}
+
+* {
+    margin: 10;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+}
+
+h1 h2 {
+    font-family: var(--title-font);
+}
+
+header {
+    height: 100px;
+    background-color: var(--primary-color);
+    width: 100%;
+}
+
+h1 {
+    line-height: 100px;
+    text-align: center;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+main {
+    padding: 2rem;
+}
+
+#Host-Grotesk {
+    font-family: var(--title-font);
+}
+
+footer {
+    font-family: var(--title-font);
+    background-color: var(--primary-color);
+    color: var(--footer-text-color);
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+    height: 90px;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+footer p span {
+    font-weight: bold;
+}
+
+#lastModified {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    color: var(--footer-text-color);
+}
