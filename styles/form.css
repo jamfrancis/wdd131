@@ -80,7 +80,7 @@ main {
     margin: 10px 10px 10px 0px;
     font-size: medium;
     padding-left: 5px;
-    font-family: (var(--body-font));
+    font-family: var(--body-font);
 }
 
 #rating {
@@ -136,7 +136,7 @@ input[type="radio"] {
     margin: 10px 10px 10px 0px;
     font-size: medium;
     padding-left: 5px;
-    font-family: (var(--body-font));
+    font-family: var(--body-font);
 }
 
 #features {
@@ -174,7 +174,7 @@ textarea {
     max-width: 400px;
     padding: 10px;
     margin: 5px 0px;
-    font-family: (var(--body-font));
+    font-family: var(--body-font);
 }
 
 #user-name {
@@ -183,7 +183,7 @@ textarea {
     height: 40px;
     padding: 10px;
     margin: 10px 10px 10px 0px;
-    font-family: (var(--body-font));
+    font-family: var(--body-font);
 }
 
 #submit {
@@ -198,7 +198,7 @@ input {
     height: 40px;
     font-size: larger;
     font-weight: 600;
-    font-family: (var(--title-font));
+    font-family: var(--title-font);
 }
 
 button {
@@ -206,7 +206,7 @@ button {
     max-width: 360px;
     height: 40px;
     font-size: larger;
-    font-family: (var(--title-font));
+    font-family: var(--title-font);
 }
 
 #thank p {
