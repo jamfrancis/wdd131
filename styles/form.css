@@ -183,7 +183,21 @@ textarea {
     height: 40px;
     padding: 10px;
     margin: 10px 10px 10px 0px;
+
     font-family: var(--body-font);
+}
+
+#name-input {
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
 }
 
 #submit {
@@ -199,6 +213,7 @@ input {
     font-size: larger;
     font-weight: 600;
     font-family: var(--title-font);
+    margin-left: 0px;
 }
 
 button {
