@@ -1,20 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hintz Family Dentristy</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base-large.css">
+    <script src="scripts/script.js" defer></script>
 </head>
+
 <body>
     <header>
         <nav>
-            <img id="mobile-logo" src="" alt="" href="index.html">
-            <ul>
+            <div class="logo">
+                <a href="index.html">
+                    <img id="mobile-logo" src="images/hintz_logo.avif" alt="Hintz Family Dentistry Logo">
+                </a>
+            </div>
+            <div id="menu" href="#">
+            </div>
+            <ul id="navigation">
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="about.html">ABOUT US</a></li>
-                <li><a href="about.html">SERVICES</a></li>
-                <img id="desk-logo" src="" alt="" href="index.html">
                 <li><a href="about.html">PAYMENT INFO</a></li>
+                <li><a href="index.html"><img id="desk-logo" src="images/hintz_logo.avif"
+                            alt="Hintz Family Dentistry Logo"></a></li>
+                <li><a href="about.html">SERVICES</a></li>
                 <li><a href="about.html">FORMS</a></li>
                 <li><a href="contact.html">CONTACT US</a></li>
             </ul>
@@ -22,13 +34,179 @@
     </header>
     <main>
         <div id="hero">
-            <img id="hero-img" src="" alt="">
-            <h2>HIGH QUALITY DENTAL CARE</h2>
-            <h1>FOR THE WHOLE FAMILY</h1>
+            <img id="hero-img" src="images/family_photo.avif" alt="A happy family sitting in the woods">
+            <div id="hero-txt" class="text-overlay">
+                <h1>HIGH QUALITY DENTAL CARE</h1>
+                <h2>FOR THE WHOLE FAMILY</h2>
+                <a href="contact.html">
+                    <button class="contact">REQUEST APPOINTMENT</button>
+                </a>
+            </div>
+        </div>
+        <div id="info">
+            <div id="services">
+                <h3>Our Services:</h3>
+                <ul id="service-list">
+                    <li>Bridges</li>
+                    <li>Children's Teeth</li>
+                    <li>Crowns</li>
+                    <li>Deep Cleaning</li>
+                    <li>Dental Cleaning</li>
+                    <li>Dentures</li>
+                    <li>Fillings</li>
+                    <li>Implants</li>
+                    <li>Partials</li>
+                    <li>Root Canal Therapy</li>
+                    <li>Whitening</li>
+                </ul>
+            </div>
+            <div id="office-hours">
+                <h3>Office Hours</h3>
+                <div class="hours">
+                    <div class="day">Monday</div>
+                    <div class="time">7:00am – 5:00pm</div>
+                    <div class="day">Tuesday</div>
+                    <div class="time">7:00am – 5:00pm</div>
+                    <div class="day">Wednesday</div>
+                    <div class="time">7:00am – 5:00pm</div>
+                    <div class="day">Thursday</div>
+                    <div class="time">7:00am – 5:00pm</div>
+                    <div class="day">Friday</div>
+                    <div class="time">7:00am – 5:00pm</div>
+                    <div class="day">Saturday</div>
+                    <div class="time">CLOSED</div>
+                    <div class="day">Sunday</div>
+                    <div class="time">CLOSED</div>
+                </div>
+            </div>
+        </div>
+        <div id="reviews">
+            <div class="review-card">
+                <div class="review-name">
+                    <p>
+                        M Merrell
+                    </p>
+                </div>
+                <div class="review-stars">
+                    <p>
+                        ★★★★★
+                    </p>
+                </div>
+                <div class="platform">
+                    <a
+                        href="https://www.google.com/search?sca_esv=86a88d896bcf14c1&sxsrf=ADLYWILotsSLZ3_bil9RiVFjHZIDlA0S-A:1734211269424&kgmid=/g/1v6qj57w&q=Hintz+Family+Dentistry&shndl=30&shem=uaasie&source=sh/x/loc/uni/m1/1&kgs=7eab8e1cdcbd49ef#lrd=0x87ee856d6009b7d7:0x25af939ebc48c1cb,1,,,,">
+                        <img src="images/google_icon.png">
+                    </a>
+                </div>
+                <div class="review-text">
+                    <p>“We have been taking our family to Hintz Family Dentistry for several years and have always had a
+                        great experience! The staff is friendly and efficient, and they are so patient with our children
+                        when they get nervous or scared about cleanings or fillings. Dr. Hintz is honest and upfront
+                        about
+                        any procedures that need to be done and we have always been very pleased with the results. I
+                        would
+                        highly recommend any of their practices!”</p>
+                </div>
+
+            </div>
+            <div class="review-card">
+                <div class="review-name">
+                    <p>
+                        Carole Fink
+                    </p>
+                </div>
+                <div class="review-stars">
+                    <p>
+                        ★★★★★
+                    </p>
+                </div>
+                <div class="platform">
+                    <a
+                        href="https://www.google.com/search?sca_esv=86a88d896bcf14c1&sxsrf=ADLYWILotsSLZ3_bil9RiVFjHZIDlA0S-A:1734211269424&kgmid=/g/1v6qj57w&q=Hintz+Family+Dentistry&shndl=30&shem=uaasie&source=sh/x/loc/uni/m1/1&kgs=7eab8e1cdcbd49ef#lrd=0x87ee856d6009b7d7:0x25af939ebc48c1cb,1,,,,">
+                        <img src="images/google_icon.png">
+                    </a>
+                </div>
+                <div class="review-text">
+                    <p>“Fast and efficient dentist office. I've only been there twice and I've had almost no wait time
+                        getting in. Once in, the staff is very fast, efficient, and they really care about the patients.
+                        Would definitely recommend them!”</p>
+                </div>
+
+            </div>
+            <a
+                href="https://www.google.com/search?sca_esv=86a88d896bcf14c1&sxsrf=ADLYWILotsSLZ3_bil9RiVFjHZIDlA0S-A:1734211269424&kgmid=/g/1v6qj57w&q=Hintz+Family+Dentistry&shndl=30&shem=uaasie&source=sh/x/loc/uni/m1/1&kgs=7eab8e1cdcbd49ef#lrd=0x87ee856d6009b7d7:0x25af939ebc48c1cb,3,,,,">
+                <button>LEAVE US A REVIEW</button>
+            </a>
+        </div>
+        <div class="faq">
+            <div class="faq-item">
+                <button class="faq-question">How often should I have an exam or cleaning?</button>
+                <div class="faq-answer">
+                    <p>You should have your teeth checked and cleaned at least twice a year, though your dentist or
+                        hygienist may recommend more frequent visits.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">Is my insurance accepted?</button>
+                <div class="faq-answer">
+                    <p>Yes, we accept Medicaid, Hawk-I, and the Dental Wellness Plan (also called Iowa Health and
+                        Wellness).</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">Do you take new patients?</button>
+                <div class="faq-answer">
+                    <p>We are currently accepting new patients. Please call (515) 965-1653 to schedule your appointment!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="location">
+            <div id="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5301.573065154866!2d-93.6035149895538!3d41.73438970724328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87ee856d6009b7d7%3A0x25af939ebc48c1cb!2sHintz%20Family%20Dentistry!5e1!3m2!1sen!2sus!4v1734218376518!5m2!1sen!2sus"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div id="contact-section">
+            <a href="contact.html">
+                <button class="contact" href="contact.html">CONTACT US</button>
+            </a>
+            <h4>FOR LIFE-THREATENING EMERGENCIES CALL 911</h4>
         </div>
     </main>
     <footer>
-        <!-- footer content -->
+        <div id="connection">
+            <a href="https://www.facebook.com/IAHintzFamilyDentistry">
+                <button id="facebook">FOLLOW US<br>ON FACEBOOK</button>
+            </a>
+            <a
+                href="https://www.google.com/search?sca_esv=86a88d896bcf14c1&sxsrf=ADLYWILotsSLZ3_bil9RiVFjHZIDlA0S-A:1734211269424&kgmid=/g/1v6qj57w&q=Hintz+Family+Dentistry&shndl=30&shem=uaasie&source=sh/x/loc/uni/m1/1&kgs=7eab8e1cdcbd49ef#lrd=0x87ee856d6009b7d7:0x25af939ebc48c1cb,3,,,,">
+                <button id="footer-review">REVIEW US<br>ON GOOGLE</button>
+            </a>
+        </div>
+        <div id="legal">
+            <a href="https://www.hintzfamilydentistry.com/notice-of-non-discrimination">
+                <p>Notice of Non-Discrimination</p>
+            </a>
+            <a href="https://www.hintzfamilydentistry.com/section-1557-taglines">
+                <p>Section 1557 Taglines</p>
+            </a>
+            <a href="https://www.hintzfamilydentistry.com/_files/ugd/c7bd57_e6d3f931b15b4fa19aa49cbb53eb96b7.pdf">
+                <p>Notice of Privacy Practices</p>
+            </a>
+        </div>
+
+        <div id="new-patient">
+            <a href="">
+                <p>New Patient?<br>Access Paperwork Here</p>
+            </a>
+            <img id="footer-logo" src="images/hintz_logo.avif" alt="Hintz Family Dentistry Logo" href="index.html">
+        </div>
     </footer>
 </body>
+
 </html>
