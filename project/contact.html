@@ -9,6 +9,7 @@
     <meta name="description"
         content="Review a variety of products, providing useful and actionable feedback for others to consider. Include an informative, but optional written review, adding additional perspectives.">
     <script src="scripts/form.js" defer></script>
+    <script src="scripts/script.js" defer></script>
     <link rel="stylesheet" href="styles/contact.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/base-large.css">
@@ -39,34 +40,34 @@
     </header>
     <main>
         <form method="get" action="review.html">
-                <!-- user name -->
-                <div id="name-input">
-                    <label for="user-name">Name</label>
-                    <input type="text" id="user-name" name="user-name">
-                </div>
-
-                <!-- email -->
-                <div id="email-input">
-                    <label for="email">Email</label>
-                    <input type="text" id="email" name="email">
-                </div>
-
-                <!-- subject -->
-                <? id="subject-imput">
-                    <label for="subject">Subject</label>
-                    <input type="text" id="subject" name="subject">
+            <!-- user name -->
+            <div id="name-input">
+                <label for="user-name">Name</label>
+                <input type="text" id="user-name" name="user-name">
             </div>
 
-                <!-- message -->
-                <div id="message-imput">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" cols="40"></textarea>
-                </div>
+            <!-- email -->
+            <div id="email-input">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email">
+            </div>
 
-                <!-- submit button -->
-                <div id="submit">
-                    <input type="submit" value="Send">
-                </div>
+            <!-- subject -->
+            <div id="subject-input">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject">
+            </div>
+
+            <!-- message -->
+            <div id="message-input">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" cols="40"></textarea>
+            </div>
+
+            <!-- submit button -->
+            <div id="submit">
+                <input type="submit" value="Send">
+            </div>
             </div>
         </form>
     </main>

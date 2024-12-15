@@ -19,6 +19,7 @@
     }
 
     #navigation {
+        content-visibility: visible;
         display: flex !important;
         flex-direction: row;
         justify-content: center;

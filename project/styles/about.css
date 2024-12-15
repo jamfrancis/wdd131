@@ -1,0 +1,103 @@
+main {}
+
+/* About */
+#about-wrapper {
+    padding: 10px;
+}
+
+#about h1 {
+    text-align: center;
+    margin-top: 0px;
+}
+
+#about {
+    background-color: var(--accent-color);
+    margin: 0 auto;
+    margin-top: 20px;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.371);
+}
+
+/* Services */
+
+#services-page {
+    background-color: var(--primary-color);
+}
+
+#services-page h2 {
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 0px;
+}
+
+#services-page p {
+    padding: 30px;
+    margin: 0px;
+}
+
+#cards-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: var(--secondary-color);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.371);
+    max-width: 250px;
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.card p {
+    max-height: 3em;
+    /* Show only a few lines */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: max-height 0.3s ease, white-space 0.3s ease;
+}
+
+
+.card p.collapsed {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.card p:not(.collapsed) {
+    max-height: 100em;
+    /* Large enough to show all content */
+    white-space: normal;
+}
+
+.card button {
+    margin-top: 10px;
+    padding: 0px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    background-color: var(--accent-color);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 2.5rem;
+}
+
+.card button:hover {
+    background-color: #ccca5d;
+}
+
+/* Payment */
+
+#insurance h2 {
+    text-align: center;
+}

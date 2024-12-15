@@ -78,28 +78,11 @@ main {
     text-align: left;
 }
 
-#product-select {
-    width: 90%;
-    max-width: 400px;
-    height: 40px;
-    margin: 10px 10px 10px 0px;
-    font-size: medium;
-    padding-left: 5px;
-    font-family: var(--body-font);
-}
 
 #rating {
     margin: 0 auto;
     max-width: 600px;
     /* text-align: center; */
-}
-
-#stars {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0px 0px 5px 3px;
-    width: 90%;
-    max-width: 600px;
 }
 
 legend {
@@ -134,15 +117,6 @@ input[type="radio"] {
     text-align: left;
 }
 
-#installation-date {
-    width: 90%;
-    max-width: 400px;
-    height: 40px;
-    margin: 10px 10px 10px 0px;
-    font-size: medium;
-    padding-left: 5px;
-    font-family: var(--body-font);
-}
 
 #features {
     margin: 0 auto;
