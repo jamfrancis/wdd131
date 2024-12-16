@@ -101,3 +101,18 @@ main {}
 #insurance h2 {
     text-align: center;
 }
+
+#payment-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.payment-card {
+    background-color: rgb(213 238 241);
+    width: 600px;
+    min-width: 300px;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+}

@@ -4,12 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Cards</title>
+    <title>Info | Hintz Family Dentistry</title>
+    <meta name="author" content="James Francis">
+    <meta name="description"
+        content="At Hintz Family Dentistry, we combine a calm atmosphere with modern technology to provide personalized, high-quality dental care for every patient in a comfortable and caring environment. Our experienced, bilingual team stays up-to-date with the latest techniques to ensure lifetime oral health and a smile that lasts.">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/base-large.css">
     <link rel="stylesheet" href="styles/about.css">
-    <script src="scripts/data.js" defer>
-    </script>
+    <script src="scripts/data.js" defer></script>
+    <script src="scripts/script.js" defer></script>
 </head>
 
 <body>
@@ -20,16 +23,16 @@
                     <img id="mobile-logo" src="images/hintz_logo.avif" alt="Hintz Family Dentistry Logo">
                 </a>
             </div>
-            <div id="menu" href="#">
+            <div id="menu" href="#" aria-label="Toggle navigation">
             </div>
             <ul id="navigation">
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="about.html">ABOUT US</a></li>
-                <li><a href="about.html">PAYMENT INFO</a></li>
+                <li><a href="about.html#insurance">PAYMENT INFO</a></li>
                 <li><a href="index.html"><img id="desk-logo" src="images/hintz_logo.avif"
                             alt="Hintz Family Dentistry Logo"></a></li>
-                <li><a href="about.html">SERVICES</a></li>
-                <li><a href="about.html">FORMS</a></li>
+                <li><a href="about.html#services-page">SERVICES</a></li>
+                <li><a href="https://www.hintzfamilydentistry.com/forms">FORMS</a></li>
                 <li><a href="contact.html">CONTACT US</a></li>
             </ul>
         </nav>
@@ -83,30 +86,33 @@
         </div>
         <div id="insurance">
             <h2>PAYMENT INFO</h2>
-            <div class="payment-card">
-                <h3>INSURANCE</h3>
-                <p>We accept all major insurance plans including:</p>
-                <ul>
-                    <li>MetLife</li>
-                    <li>Delta Dental</li>
-                    <li>Cigna</li>
-                    <li>Guardian</li>
-                    <li>Humana</li>
-                </ul>
-                <p>Medicaid, Dental Wellness Plan, and Hawk-I are accepted.</p>
-            </div>
-            <div class="payment-card">
-                <h3>PAYMENT POLICIES</h3>
-                <p>Payment is due the day of service. If you would like a price estimate before your visit, please call
-                    one
-                    of our offices.</p>
-                <p>We accept various forms of payment including:</p>
-                <ul>
-                    <li>Cash</li>
-                    <li>Check</li>
-                    <li>Major credit cards</li>
-                    <li>CareCredit</li>
-                </ul>
+            <div id="payment-container">
+                <div class="payment-card">
+                    <h3>INSURANCE</h3>
+                    <p>We accept all major insurance plans including:</p>
+                    <ul>
+                        <li>MetLife</li>
+                        <li>Delta Dental</li>
+                        <li>Cigna</li>
+                        <li>Guardian</li>
+                        <li>Humana</li>
+                    </ul>
+                    <p>Medicaid, Dental Wellness Plan, and Hawk-I are accepted.</p>
+                </div>
+                <div class="payment-card">
+                    <h3>PAYMENT POLICIES</h3>
+                    <p>Payment is due the day of service. If you would like a price estimate before your visit, please
+                        call
+                        one
+                        of our offices.</p>
+                    <p>We accept various forms of payment including:</p>
+                    <ul>
+                        <li>Cash</li>
+                        <li>Check</li>
+                        <li>Major credit cards</li>
+                        <li>CareCredit</li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div id="forms">
@@ -136,7 +142,7 @@
         </div>
 
         <div id="new-patient">
-            <a href="">
+            <a href="https://www.hintzfamilydentistry.com/forms">
                 <p>New Patient?<br>Access Paperwork Here</p>
             </a>
             <img id="footer-logo" src="images/hintz_logo.avif" alt="Hintz Family Dentistry Logo" href="index.html">

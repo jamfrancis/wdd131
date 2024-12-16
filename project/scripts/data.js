@@ -40,11 +40,11 @@ function toggleContent(index) {
     if (content.classList.contains('collapsed')) {
         // Expand content
         content.classList.remove('collapsed');
-        button.textContent = '^';
+        button.textContent = `^`;
     } else {
         // Collapse content
         content.classList.add('collapsed');
-        button.textContent = '⌄';
+        button.textContent = `⌄`;
     }
 }
 

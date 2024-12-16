@@ -26,6 +26,10 @@
     --footer-text-color: rgb(0 52 73);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 html,
 body {
     margin: 0;
@@ -67,47 +71,72 @@ nav {
 }
 
 #menu {
-    font-size: 3rem;
-    font-weight: 700;
-    height: 60px;
+    cursor: pointer;
+    font-size: 2rem;
+    background-color: var(--primary-color);
+    color: var(--text-color);
     width: 50px;
-    text-decoration: none;
-    background-color: var(--header-text-color);
-    color: #000;
-    margin-right: 0px;
-    position: absolute;
-    right: 5px;
-    /* Position the menu on the far right */
-    z-index: 2;
-}
-
-#menu::before {
-    display: block;
-    content: "≡";
-    text-align: center;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
 }
 
 #menu.show::before {
     content: "X";
 }
 
-#navigation {
+#menu::before {
+    content: "≡";
+    text-align: center;
+}
+
+
+
+/* #navigation {
     content-visibility: hidden;
-    /* Hide navigation links by default */
     list-style: none;
     padding: 0;
     margin: 0;
-}
-
-#navigation {
     display: flex;
-    /* Make links visible when the class "show" is added */
     justify-content: space-evenly;
     flex-direction: column;
     gap: 10px;
     background-color: var(--primary-color);
     width: 100%;
     text-align: center;
+} */
+#navigation {
+    display: none;
+    /* Initially hidden */
+    list-style: none;
+    flex-direction: column;
+    text-align: center;
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 80px;
+    left: 0;
+    height: 300px;
+    width: 92%;
+    z-index: 10;
+}
+
+#navigation.show {
+    display: flex;
+}
+
+#navigation a {
+    color: var(--text-color);
+    font-size: xx-large;
+
+    width: 100%;
+}
+
+#navigation li {
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 #mobile-logo {
@@ -118,7 +147,7 @@ nav {
 }
 
 #desk-logo {
-    content-visibility: visible;
+    display: none;
     width: 100px;
 }
 
@@ -417,23 +446,28 @@ footer p span {
 
 #connection {
     display: flex;
-    justify-content: space-between;
-    padding: 0px 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0px;
+    width: 100%;
 
 
 }
 
 #connection button {
-    width: 110px;
+    width: 150px;
+    height: 60px;
     padding: 5px;
+    margin: 0 5px;
 }
 
 #facebook {
-    background-color: rgb(24, 119, 242);
+    background-color: rgb(125, 162, 211);
 }
 
 #footer-review {
-    background-color: #0F9D58;
+    background-color: #93d9b7;
 }
 
 #legal {
