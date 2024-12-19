@@ -11,6 +11,25 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/base-large.css">
     <script src="scripts/script.js" defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCUWnTO-DP-gBgHuPF23_bJ14KwASQimk" async
+        defer></script>
+    <script>
+        function initMap() {
+            const location = { lat: 41.734447353393165, lng: -93.59959703211702 };
+            const map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 13,
+                center: location,
+            });
+
+
+            const marker = new google.maps.marker({
+                map: map,
+                position: location,
+                title: "Hintz Family Dentistry", // Optional: Add a title
+            });
+        }
+        window.onload = initMap;
+    </script>
 </head>
 
 <body>
@@ -118,11 +137,7 @@
             <a href="https://www.google.com/search?q=Hintz+Family+Dentistry" class="button-link">LEAVE US A REVIEW</a>
         </div>
         <div id="location">
-            <div id="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="600" height="300" style="border:0;"
-                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                    title="Hintz Family Dentistry Location"></iframe>
-            </div>
+            <div id="map" style="width: 100%; height: 400px;"></div>
         </div>
         <div id="contact-section">
             <a href="contact.html" class="button-link">CONTACT US</a>
