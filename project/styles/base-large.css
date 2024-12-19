@@ -1,10 +1,10 @@
 @media only screen and (min-width: 45em) {
 
     #mobile-logo {
-        display: none;
+        display: hidden;
     }
 
-    #desk-logo img {
+    #desk-logo {
         content-visibility: visible;
         display: block;
         width: 100px;
@@ -21,25 +21,45 @@
     #navigation {
         content-visibility: visible;
         display: flex !important;
+
         flex-direction: row;
         justify-content: center;
         align-items: center;
         list-style: none;
         padding: 0;
         margin: 0 auto;
-        background-color: var(--primary-color);
+        background-color: rgba(240, 248, 255, 0);
         z-index: 10;
+        height: 100px;
+        position: absolute;
+        top: -40px;
+        left: 0;
+
     }
 
     #navigation li {
         display: inline-block;
+
+
+    }
+
+    #navigation img {
+        content-visibility: visible;
+        width: 100px;
+    }
+
+    #nav-logo {
+        content-visibility: visible;
+        width: 1000px;
     }
 
     #navigation a {
+
         display: block;
         text-decoration: none;
         color: var(--text-color);
         font-weight: bold;
+        font-size: medium;
         padding: 10px 15px;
         transition: color 0.3s, background-color 0.3s;
     }

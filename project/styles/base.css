@@ -119,7 +119,7 @@ nav {
     top: 80px;
     left: 0;
     height: 300px;
-    width: 92%;
+    width: 100%;
     z-index: 10;
 }
 
@@ -140,15 +140,14 @@ nav {
 }
 
 #mobile-logo {
-    content-visibility: show;
+    content-visibility: visible;
     width: 100px;
     justify-self: center;
     /* margin: 0px 50%; */
 }
 
-#desk-logo {
-    display: none;
-    width: 100px;
+#nav-logo {
+    content-visibility: hidden;
 }
 
 h1 h2 {
@@ -207,22 +206,28 @@ h1 h2 {
     margin-bottom: 100px;
 }
 
-button {
+button,
+a.button-link {
     align-self: center;
     height: 50px;
     width: 200px;
     display: inline-block;
-    padding: 10px 20px;
+    padding: 18px 20px 0px;
     border-radius: 999px;
     border: none;
     background-color: var(--accent-color);
     color: var(--text-color);
-    font-size: 0.75rem;
+    font-size: 1rem;
     font-family: var(--body-font);
     font-weight: 700;
     cursor: pointer;
     text-align: center;
+    justify-content: center;
     transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+a {
+    justify-items: center;
 }
 
 img {
@@ -360,7 +365,7 @@ h3 {
     overflow: hidden;
 }
 
-.faq-question button {
+.faq-question a.button-link {
     border-radius: 0px;
 }
 
@@ -383,6 +388,11 @@ h3 {
 .faq-question:hover {
     background-color: var(--secondary-color);
     color: var(--accent-color);
+}
+
+a.button-link {
+    line-height: 30px;
+    /* Adjust if needed for proper vertical alignment */
 }
 
 .faq-answer {
@@ -416,7 +426,7 @@ h3 {
     padding: 5px;
 }
 
-#contact-section button {
+#contact-section a.button-link {
     margin-top: 10px;
     background-color: var(--secondary-color);
 }
@@ -455,7 +465,7 @@ footer p span {
 
 }
 
-#connection button {
+#connection a.button-link {
     width: 150px;
     height: 60px;
     padding: 5px;
