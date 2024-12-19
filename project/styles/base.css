@@ -125,6 +125,7 @@ nav {
 
 #navigation.show {
     display: flex;
+    padding-left: 0px;
 }
 
 #navigation a {
@@ -148,6 +149,11 @@ nav {
 
 #nav-logo {
     content-visibility: hidden;
+}
+
+#desk-logo {
+    /* content-visibility: hidden; */
+    display: none;
 }
 
 h1 h2 {
@@ -218,7 +224,6 @@ a.button-link {
     background-color: var(--accent-color);
     color: var(--text-color);
     font-size: 1rem;
-    font-family: var(--body-font);
     font-weight: 700;
     cursor: pointer;
     text-align: center;

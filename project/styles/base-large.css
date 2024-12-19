@@ -1,7 +1,8 @@
 @media only screen and (min-width: 45em) {
 
     #mobile-logo {
-        display: hidden;
+        display: none;
+        content-visibility: hidden;
     }
 
     #desk-logo {
@@ -32,7 +33,7 @@
         z-index: 10;
         height: 100px;
         position: absolute;
-        top: -40px;
+        top: -45px;
         left: 0;
 
     }
@@ -94,7 +95,7 @@
         margin-bottom: 100px;
     }
 
-    #hero-txt button {
+    #hero-txt a {
         transform: translate(0, -200%);
     }
 
@@ -124,23 +125,31 @@
     #legal {
         grid-column: 1/2;
         grid-row: 1/2;
+        align-self: center;
     }
 
     #connection {
-        display: block;
         grid-column: 2/3;
         justify-self: center;
-        width: 100px;
-        margin: auto;
+        width: 250px;
+        margin-top: 3px;
+        height: 150px;
+        /* margin: 0 auto; */
     }
 
-    #connection button {
-        margin: 4px;
-    }
+    #connection a {}
 
     #new-patient {
         grid-column: 3/4;
         margin: auto;
+        display: grid;
+        grid-template-columns: 1fr .5fr;
+        column-gap: 5px;
+    }
+
+    #new-patient a {
+        align-self: center;
+        font-weight: 700;
     }
 
     #footer-logo {
